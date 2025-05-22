@@ -33,9 +33,6 @@ header {
     padding: 10px 50px 10px 10px;
     color: #EBEBD3;
     position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
 }
 
 .logo {
@@ -64,7 +61,7 @@ header {
 }
 
 .menu ul li a {
-    padding: 20px 50px;
+    padding: 20px 40px;
     color: #EBEBD3;
     transition: color 0.3s ease, font-size 0.3s ease;
     font-size: 16px;
@@ -137,22 +134,22 @@ header {
 .produtoss {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
     width: 100%;
 }
 
 /* Produto Único */
 .produto {
     height: 90px;
-    width: 100%;
-    max-width: 500px;
+    width:800px;
     background-color: #D95204;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 7px;
+    padding: 5px;
     border-radius: 8px;
     box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.668);
     margin-bottom: 10px;
@@ -160,8 +157,8 @@ header {
 }
 
 .produto .imagem_produto {
-    height: 90%;
-    width: 25%;
+    height: 100%;
+    width: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -174,9 +171,9 @@ header {
     height: 100%;
 }
 
-.produto .descricao_valor {
+.produto .descricao {
     height: 90%;
-    width: 75%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -184,24 +181,32 @@ header {
     color: #EBEBD3;
 }
 
-.produto .nome_produto h1 {
-    font-size: 15px;
+.produto .descricao h1 {
+    font-size: 22px;
     margin: 0;
     color: #EBEBD3;
     font-family: "Mochiy Pop P One", cursive;
 }
 
 .produto .descricao p {
-    font-size: 13px;
+    font-size: 15px;
     margin: 0;
     line-height: 1.2;
 }
 
+.produto .valor {
+width: 20%;
+}
+
 .produto .valor h2 {
-    font-size: 18px;
+    font-size: 23px;
     margin: 0;
     color: #EBEBD3;
 }
+
+
+
+
 
 /* Rodapé */
 footer {
@@ -212,12 +217,19 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: #262626;
-    padding: 20px;
+    padding: 10px;
     gap: 20px;
 }
 
+footer .rodapeimg {
+    width: 15%;
+    height: 100%;
+background-image: url(logo2.jpg);
+}
+
 footer .rodape {
-    width: 20%;
+    margin-top: 10px;
+    width: 25%;
     height: 100%;
     background-color: #262626;
     display: flex;
@@ -229,4 +241,23 @@ footer .rodape {
 footer .rodape img {
     max-width: 100%;
     max-height: 100%;
+}
+
+footer .rodapebrand {
+    margin-top: 10px;
+    width: 15%;
+    height: 100%;
+    background-color: #262626;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer .rodapebrand img{
+width: 150px;
+}
+footer .rodapebrand h1{
+font-size: 25px;
+}
+footer .rodapebrand p{
+    font-size: 13px;
 }
