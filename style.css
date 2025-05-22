@@ -1,0 +1,141 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    list-style: none;
+}
+
+/* HTML */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Corpo */
+body {
+    font-family: Consolas, monospace;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Cabeçalho */
+header {
+    width: 100%;
+    height: 13vh;
+    background-color: #262626;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 50px 10px 10px;
+    color: #EBEBD3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Logo */
+.logo {
+    height: 70px;
+    width: 120px;
+    background-color: #EBEBD3;
+}
+
+/* Menu */
+.menu {
+    width: 75%;
+    text-align: center;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu ul li a {
+    padding: 20px 50px;
+    color: #EBEBD3;
+    transition: font-size 0.5s ease;
+}
+
+.menu ul li a:hover {
+    color: #D95204;
+    font-size: 18px;
+}
+
+/* Home */
+.linha_home {
+    background-image: url("https://s2-casavogue.glbimg.com/Kck3jZl1ZxeAyMWBJOIshRXvoto=/0x0:1080x720/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_d72fd4bf0af74c0c89d27a5a226dbbf8/internal_photos/bs/2024/l/h/l7YkpxRSCbM4j7HDhqSg/melhores-restaurantes-japoneses-sp-oguru-1-.png");
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Container */
+.container {
+    padding-top: 13vh;
+    border: 2px solid #D95204;
+    width: 1200px;
+    height: 100%;
+}
+
+/* Seções */
+.linha {
+    height: 100vh;
+    background-color: #262626;
+    border-bottom: 1px solid #758173;
+    display: flex;
+    justify-content: center;
+}
+
+/* Produtos */
+.linha .container .produtoss {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* Produto individual */
+.produto {
+    height: 78px;
+    width: 70%;
+    margin: 10px;
+    background-color: #D95204;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.produto .imagem_produto {
+    height: 90%;
+    width: 25%;
+}
+
+.produto .descricao_valor {
+    height: 90%;
+    width: 65%;
+}
+
+/* Rodapé */
+footer {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #262626;
+}
+
+footer .rodape {
+    width: 20%;
+    height: 100%;
+    background-color: #EBEBD3;
+    margin: 0 20px;
+}
