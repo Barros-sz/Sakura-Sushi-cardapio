@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +14,7 @@ html {
 }
 
 body {
-    font-family: 'Consolas', monospace;
+    font-family: "Roboto Mono", monospace;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -20,6 +22,7 @@ body {
     color: #EBEBD3;
 }
 
+/* Cabeçalho */
 header {
     width: 100%;
     height: 13vh;
@@ -65,7 +68,7 @@ header {
     color: #EBEBD3;
     transition: color 0.3s ease, font-size 0.3s ease;
     font-size: 16px;
-    font-family: 'Georgia', serif;
+    font-family: "Mochiy Pop P One", cursive;
     text-transform: uppercase;
 }
 
@@ -74,8 +77,9 @@ header {
     font-size: 18px;
 }
 
+/* Seção Home */
 .linha_home {
-    background-image: url("https://s2-casavogue.glbimg.com/Kck3jZl1ZxeAyMWBJOIshRXvoto=/0x0:1080x720/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_d72fd4bf0af74c0c89d27a5a226dbbf8/internal_photos/bs/2024/l/h/l7YkpxRSCbM4j7HDhqSg/melhores-restaurantes-japoneses-sp-oguru-1-.png");
+    background-image: url("Restaurante\ Sakura\ Sushi\ Aconchegante.png");
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -96,25 +100,25 @@ header {
 }
 
 .linha_home .container h1 {
-    font-size: 3em;
+    font-size: 48px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    font-family: 'Georgia', serif;
+    font-family: "Mochiy Pop P One", cursive;
 }
 
+/* Seção de Produtos (linhas) */
 .linha {
     height: 100vh;
-    background-color: #262626;
-    border-bottom: 1px solid #758173;
+    background-color: #EBEBD3;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 13vh;
 }
 
+/* Container de Produtos */
 .container {
     width: 1200px;
     padding: 20px;
-    border: 2px solid #D95204;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -124,40 +128,35 @@ header {
 }
 
 .container h1 {
-    color: #EBEBD3;
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    font-family: 'Georgia', serif;
+    color: #262626;
+    font-size: 35px;
+    font-family: "Mochiy Pop P One", sans-serif;
 }
 
+/* Lista de Produtos */
 .produtoss {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-
 }
 
+/* Produto Único */
 .produto {
-    height: auto;
+    height: 90px;
     width: 100%;
-    max-width: 450px;
+    max-width: 500px;
     background-color: #D95204;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 5px;
+    padding: 7px;
     border-radius: 8px;
-    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
-    /* Adiciona uma pequena margem */
+    box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.668);
     margin-bottom: 10px;
-}
-
-/* Remove a margem do último item */
-.produto:last-child {
-    margin-bottom: 0;
+    
 }
 
 .produto .imagem_produto {
@@ -177,33 +176,34 @@ header {
 
 .produto .descricao_valor {
     height: 90%;
-    width: 70%;
+    width: 75%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding-left: 10px;
+    padding-left: 15px;
     color: #EBEBD3;
 }
 
 .produto .nome_produto h1 {
-    font-size: 1.2em;
+    font-size: 15px;
     margin: 0;
     color: #EBEBD3;
-    font-family: 'Georgia', serif;
+    font-family: "Mochiy Pop P One", cursive;
 }
 
 .produto .descricao p {
-    font-size: 0.8em;
+    font-size: 13px;
     margin: 0;
     line-height: 1.2;
 }
 
 .produto .valor h2 {
-    font-size: 1.1em;
+    font-size: 18px;
     margin: 0;
     color: #EBEBD3;
 }
 
+/* Rodapé */
 footer {
     height: 200px;
     width: 100%;
@@ -219,9 +219,9 @@ footer {
 footer .rodape {
     width: 20%;
     height: 100%;
-    background-color: #EBEBD3;
+    background-color: #262626;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     border-radius: 8px;
 }
