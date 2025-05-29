@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
+/*variaveis*/
+
+:root{
+    --cor-principal-:#262626;
+    --cor-fundo-: #EBEBD3;
+    --cor-destaque-:#D95204;
+
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -18,27 +27,27 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #262626;
-    color: #EBEBD3;
+    background-color: var(--cor-principal-);
+    color: var(--cor-fundo-);
 }
 
 /* Cabeçalho */
 header {
     width: 100%;
     height: 13vh;
-    background-color: #262626;
+    background-color: var(--cor-principal-);
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 10px 50px 10px 10px;
-    color: #EBEBD3;
+    color: var(--cor-fundo-);
     position: fixed;
 }
 
 .logo {
     height: 70px;
     width: 120px;
-    background-color: #EBEBD3;
+    background-color: var(--cor-fundo-);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,14 +71,14 @@ header {
 
 .menu ul li a {
     padding: 20px 40px;
-    color: #EBEBD3;
+    color: var(--cor-fundo-);
     transition: 0.5s;
     font-size: 16px;
     font-family: "Mochiy Pop P One", cursive;
 }
 
 .menu ul li a:hover {
-    color: #D95204;
+    color: var(--cor-destaque-);
 }
 
 /* Seção Home */
@@ -83,7 +92,7 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #EBEBD3;
+    color: var(--cor-fundo-);
 }
 
 .linha_home .container {
@@ -103,7 +112,7 @@ header {
 /* Seção de Produtos (linhas) */
 .linha {
     height: 100vh;
-    background-color: #EBEBD3;
+    background-color:var(--cor-fundo-);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -142,7 +151,7 @@ header {
 .produto {
     height: 90px;
     width:800px;
-    background-color: #D95204;
+    background-color: var(--cor-destaque-);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -176,13 +185,13 @@ header {
     flex-direction: column;
     justify-content: space-around;
     padding-left: 15px;
-    color: #EBEBD3;
+    color: var(--cor-fundo-);
 }
 
 .produto .descricao h1 {
     font-size: 22px;
     margin: 0;
-    color: #EBEBD3;
+    color: var(--cor-fundo-);
     font-family: "Mochiy Pop P One", cursive;
 }
 
@@ -199,7 +208,7 @@ width: 20%;
 .produto .valor h2 {
     font-size: 23px;
     margin: 0;
-    color: #EBEBD3;
+    color: var(--cor-fundo-);
 }
 
 
@@ -214,7 +223,7 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: #262626;
+    background-color: var(--cor-principal-);
     padding: 10px;
     gap: 20px;
 }
@@ -229,7 +238,7 @@ footer .rodape {
     margin-top: 10px;
     width: 25%;
     height: 100%;
-    background-color: #262626;
+    background-color: var(--cor-principal-);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -245,7 +254,7 @@ footer .rodapebrand {
     margin-top: 10px;
     width: 18%;
     height: 100%;
-    background-color: #262626;
+    background-color: var(--cor-principal-);
     display: flex;
     flex-direction: column;
     align-items: center;
